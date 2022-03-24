@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebSite">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Colour - Finetune Digital Design Guidelines</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preload" as="font" href="/Finetune-Partners-2022-dev/fonts/etc-trispace-bold.a36b69.woff2" type="font/woff2" crossorigin>
+  <link rel="preload" as="font" href="/Finetune-Partners-2022-dev/fonts/etc-trispace-medium.205719.woff2" type="font/woff2" crossorigin>
+  <link rel="preload" as="font" href="/Finetune-Partners-2022-dev/fonts/etc-trispace-regular.647168.woff2" type="font/woff2" crossorigin>
+  <link rel="preload" as="font" href="/Finetune-Partners-2022-dev/fonts/anton-regular.556918.woff2" type="font/woff2" crossorigin>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="description" content="Background and foreground colours used on the Finetune website">
+  <meta property="fb:admins" content="1570989889829468">
+  <meta property="og:title" content="Colour - Finetune Digital Design Guidelines">
+  <meta property="og:description" content="Background and foreground colours used on the Finetune website">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Finetune">
+  <meta property="og:image" content="/Finetune-Partners-2022-dev/img/og/og-laptop.png">
+  <meta itemprop="image" content="/Finetune-Partners-2022-dev/img/og/og-laptop.png">
+  <link rel="image_src" href="/Finetune-Partners-2022-dev/img/og/og-laptop.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/Finetune-Partners-2022-dev/img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/Finetune-Partners-2022-dev/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/Finetune-Partners-2022-dev/img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/Finetune-Partners-2022-dev/site.webmanifest">
+  <link rel="mask-icon" href="/Finetune-Partners-2022-dev/img/favicon/safari-pinned-tab.svg" color="#2e38ef">
+  <meta name="msapplication-TileColor" content="#ffc40d">
+  <meta name="theme-color" content="#d7f2db">
+  <meta name="google-site-verification" content="Q_pU1NcVNhRdEntMQE-K2ZMEpCTRbSdOEtMpk_8iVCQ">
+  <script>
+    window.gdpr = {
+      "addTag": function (tag, attr, content) {
+        var newTag = document.createElement(tag);
+        for (var prop in attr) {
+          if (!attr.hasOwnProperty(prop)) continue;
+          newTag.setAttribute(prop, attr[prop]);
+        }
+        if (content) newTag.innerHTML = content;
+        var scripts = document.getElementsByTagName("script");
+        var here = scripts[scripts.length - 1];
+        here.parentElement.insertBefore(newTag, here.nextSibling);
+      }
+    };
+    var gdprChoice = document.cookie.match(new RegExp('(^| )gdpr=([^;]+)'));
+    window.gdpr.choice = gdprChoice ? (gdprChoice[0].split('=')[1] == 'true') : null;
+  </script>
+<script defer src="../../js/app.js"></script><link href="../../css/app.css" rel="stylesheet"></head>
+
+<body>
+  <a href="#main" class="skip">Skip to content</a>
+
+  <nav class="bt-white brd-bottom pad-vert-tiny main-nav gutter-large" aria-label="Main">
+    <p class="container flush">
+      <a href="/Finetune-Partners-2022-dev/guide/" class="btn btn-nav">Home</a>
+      <a href="/Finetune-Partners-2022-dev/guide/typeface/" class="btn btn-nav">Typefaces</a>
+      <a href="/Finetune-Partners-2022-dev/guide/typography/" class="btn btn-nav">Typography</a>
+      <a href="/Finetune-Partners-2022-dev/guide/heading/" class="btn btn-nav">Headings</a>
+      <a href="/Finetune-Partners-2022-dev/guide/colour/" class="btn btn-nav">Colour</a>
+      <a href="/Finetune-Partners-2022-dev/guide/button/" class="btn btn-nav">Buttons</a>
+      <a href="/Finetune-Partners-2022-dev/guide/panel/" class="btn btn-nav">Panels and call-to-action</a>
+      <a href="/Finetune-Partners-2022-dev/guide/icon/" class="btn btn-nav">Icons</a>
+    </p>
+  </nav>
+
+  <main id="main">
+
+    <h1 class="container">Colour</h1>
+
+    <section class="pad-vert-xlarge bg-black gutter-large" aria-label="Light colours">
+      <div class="container">
+        <h2>Light colours</h2>
+        <p>Light colours use the <code>bt-</code> (background tint) prefix in their classnames.</p>
+
+        <div class="row">
+          <div class="col-6">
+            <p class="bt-white pad-all-small">bt-white<br>$colour-white<br>#fff</p>
+          </div>
+          <div class="col-6">
+            <p class="bt-light-grey pad-all-small">bt-light-grey<br>$colour-light-grey<br>#f2f2f2</p>
+          </div>
+          <div class="col-6">
+            <p class="bt-pale-yellow pad-all-small">bt-pale-yellow<br>$colour-pale-yellow<br>#F6F4D0</p>
+          </div>
+          <div class="col-6">
+            <p class="bt-highlight-yellow pad-all-small">bt-highlight-yellow<br>$colour-highlight-yellow<br>#F7FD54</p>
+          </div>
+          <div class="col-6">
+            <p class="bt-sage-green pad-all-small">bt-sage-green<br>$colour-sage-green<br>#60CC7C</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pad-vert-xlarge gutter-large" aria-label="Dark Colours">
+      <div class="container">
+        <h2>Dark colours</h2>
+        <p>Dark colours use the <code>bg-</code> (background) prefix in their classnames.</p>
+
+        <div class="row">
+          <div class="col">
+            <p class="bg-black pad-all-small">bg-black<br>$colour-black<br>#010111</p>
+          </div>
+          <div class="col">
+            <p class="bg-interactive-blue pad-all-small">bg-interactive-blue<br>$colour-interactive-blue<br>#2e38ef</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container gutter-large" aria-label="Foreground Colours">
+      <h2>Foreground Colours</h2>
+      <p>Highlights indicate if the color combination in question passes <a href="https://colourcontrast.cc/" target="_blank">colour contrast guidelines</a>.</p>
+      <div class="row">
+        <section class="col-md-6 gutter-base" aria-label="Black Background">
+          <div class="pad-all-small bg-black">
+            <h3 class="h4">Black Background</h3>
+            <p class="text-black"><em class="highlight">✘</em> #000 .text-black</p>
+            <p class="text-interactive-blue"><em class="highlight" title="Pass at large heading sizes">✘</em> #6041EB .text-interactive-blue</p>
+            <p class="text-highlight-yellow"><em class="highlight">✔</em> #F7FD54 .text-highlight-yellow</p>
+            <p class="text-sage-green"><em class="highlight">✔</em> #60CC7C .text-sage-green</p>
+            <p class="text-pale-yellow"><em class="highlight">✔</em> #F6F4D0 .text-pale-yellow</p>
+            <p class="text-light-grey"><em class="highlight">✔</em> #f2f2f2 .text-light-grey</p>
+            <p class="text-white"><em class="highlight">✔</em> #ffffff .text-white</p>
+          </div>
+        </section>
+
+        <section class="col-md-6 gutter-base" aria-label="Interactive Blue Background">
+          <div class="pad-all-small bg-interactive-blue">
+            <h3 class="h4">Interactive Blue Background</h3>
+            <p class="text-black"><em class="highlight">✘</em> #000 .text-black</p>
+            <p class="text-interactive-blue"><em class="highlight" title="Pass at large heading sizes">✘</em> #6041EB .text-interactive-blue</p>
+            <p class="text-highlight-yellow"><em class="highlight" title="Fail at normal text sizes">✔</em> #F7FD54 .text-highlight-yellow</p>
+            <p class="text-sage-green"><em class="highlight">✘</em> #60CC7C .text-sage-green</p>
+            <p class="text-pale-yellow"><em class="highlight" title="Fail at normal text sizes">✔</em> #F6F4D0 .text-pale-yellow</p>
+            <p class="text-light-grey"><em class="highlight">✔</em> #f2f2f2 .text-light-grey</p>
+            <p class="text-white"><em class="highlight">✔</em> #ffffff .text-white</p>
+          </div>
+        </section>
+
+        <section class="col-md-6 gutter-base" aria-label="Sage Green Background">
+          <div class="pad-all-small bt-sage-green">
+            <h3 class="h4">Sage Green Background</h3>
+            <p class="text-black"><em class="highlight">✔</em> #000 .text-black</p>
+            <p class="text-interactive-blue"><em class="highlight" title="Pass at large text sizes">✘</em> #6041EB .text-interactive-blue</p>
+            <p class="text-highlight-yellow"><em class="highlight">✘</em> #F7FD54 .text-highlight-yellow</p>
+            <p class="text-sage-green"><em class="highlight">✘</em> #60CC7C .text-sage-green</p>
+            <p class="text-pale-yellow"><em class="highlight">✘</em> #F6F4D0 .text-pale-yellow</p>
+            <p class="text-light-grey"><em class="highlight">✘</em> #f2f2f2 .text-light-grey</p>
+            <p class="text-white"><em class="highlight">✘</em> #ffffff .text-white</p>
+          </div>
+        </section>
+
+        <section class="col-md-6 gutter-base" aria-label="Highlight Yellow Background">
+          <div class="pad-all-small bt-highlight-yellow">
+            <h3 class="h4">Highlight Yellow Background</h3>
+            <p class="text-black"><em class="highlight">✔</em> #000 .text-black</p>
+            <p class="text-interactive-blue"><em class="highlight" title="Fail at normal text sizes">✔</em> #6041EB .text-interactive-blue</p>
+            <p class="text-highlight-yellow"><em class="highlight">✘</em> #F7FD54 .text-highlight-yellow</p>
+            <p class="text-sage-green"><em class="highlight">✘</em> #60CC7C .text-sage-green</p>
+            <p class="text-pale-yellow"><em class="highlight">✘</em> #F6F4D0 .text-pale-yellow</p>
+            <p class="text-light-grey"><em class="highlight">✘</em> #f2f2f2 .text-light-grey</p>
+            <p class="text-white"><em class="highlight">✘</em> #ffffff .text-white</p>
+          </div>
+        </section>
+
+        <section class="col-md-6 gutter-base" aria-label="Pale Yellow Background">
+          <div class="pad-all-small bt-pale-yellow">
+            <h3 class="h4">Pale Yellow Background</h3>
+            <p class="text-black"><em class="highlight">✔</em> #000 .text-black</p>
+            <p class="text-interactive-blue"><em class="highlight" title="Fail at small text sizes">✔</em> #6041EB .text-interactive-blue</p>
+            <p class="text-highlight-yellow"><em class="highlight">✘</em> #F7FD54 .text-highlight-yellow</p>
+            <p class="text-sage-green"><em class="highlight">✘</em> #60CC7C .text-sage-green</p>
+            <p class="text-pale-yellow"><em class="highlight">✘</em> #F6F4D0 .text-pale-yellow</p>
+            <p class="text-light-grey"><em class="highlight">✘</em> #f2f2f2 .text-light-grey</p>
+            <p class="text-white"><em class="highlight">✘</em> #ffffff .text-white</p>
+          </div>
+        </section>
+
+        <section class="col-md-6 gutter-base" aria-label="Light Grey Background">
+          <div class="pad-all-small bt-light-grey">
+            <h3 class="h4">Light Grey Background</h3>
+            <p class="text-black"><em class="highlight">✔</em> #000 .text-black</p>
+            <p class="text-interactive-blue"><em class="highlight" title="Fail at small text sizes">✔</em> #6041EB .text-interactive-blue</p>
+            <p class="text-highlight-yellow"><em class="highlight">✘</em> #F7FD54 .text-highlight-yellow</p>
+            <p class="text-sage-green"><em class="highlight">✘</em> #60CC7C .text-sage-green</p>
+            <p class="text-pale-yellow"><em class="highlight">✘</em> #F6F4D0 .text-pale-yellow</p>
+            <p class="text-light-grey"><em class="highlight">✘</em> #f2f2f2 .text-light-grey</p>
+            <p class="text-white"><em class="highlight">✘</em> #ffffff .text-white</p>
+          </div>
+        </section>
+
+        <section class="col-md-6 gutter-base" aria-label="White Background">
+          <div class="pad-all-small">
+            <h3 class="h4">White Background</h3>
+            <p class="text-black"><em class="highlight">&#10004;</em> #000 .text-black</p>
+            <p class="text-interactive-blue"><em class="highlight">✔</em> #6041EB .text-interactive-blue</p>
+            <p class="text-highlight-yellow"><em class="highlight">✘</em> #F7FD54 .text-highlight-yellow</p>
+            <p class="text-sage-green"><em class="highlight">✘</em> #60CC7C .text-sage-green</p>
+            <p class="text-pale-yellow"><em class="highlight">✘</em> #F6F4D0 .text-pale-yellow</p>
+            <p class="text-light-grey"><em class="highlight">✘</em> #f2f2f2 .text-light-grey</p>
+            <p class="text-white"><em class="highlight">✘</em> #ffffff .text-white</p>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="pad-vert-xlarge gutter-large" aria-label="Border Colours">
+      <div class="container">
+        <h2>Border Colours</h2>
+        <p>These utility classes can be added to most elements.</p>
+
+        <div class="row justify-content-center text-center">
+
+          <section class="col-3" aria-label="Border All">
+            <h3 class="h5">Border All</h3>
+            <p><code>brd-all</code> plus border colour classes</p>
+            <p class="brd-all pad-all-small brd-black"><code>brd-black</code></p>
+            <p class="brd-all pad-all-small brd-interactive-blue"><code>brd-interactive-blue</code></p>
+            <p class="brd-all pad-all-small brd-sage-green"><code>brd-sage-green</code></p>
+            <p class="brd-all pad-all-small brd-highlight-yellow"><code>brd-highlight-yellow</code></p>
+            <p class="brd-all pad-all-small brd-pale-yellow"><code>brd-pale-yellow</code></p>
+            <p class="brd-all pad-all-small brd-white"><code>brd-white</code></p>
+          </section>
+
+          <section class="col-3 offset-3" aria-label="Border All, Round">
+            <h3 class="h5">Border All, Round</h3>
+            <p><code>brd-all</code>, <code>round</code> plus border colour classes</p>
+            <p class="brd-all round pad-all-small brd-black"><code>brd-black</code></p>
+            <p class="brd-all round pad-all-small brd-interactive-blue"><code>brd-interactive-blue</code></p>
+            <p class="brd-all round pad-all-small brd-sage-green"><code>brd-sage-green</code></p>
+            <p class="brd-all round pad-all-small brd-highlight-yellow"><code>brd-highlight-yellow</code></p>
+            <p class="brd-all round pad-all-small brd-pale-yellow"><code>brd-pale-yellow</code></p>
+            <p class="brd-all round pad-all-small brd-white"><code>brd-white</code></p>
+          </section>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+</body>
+
+</html>

@@ -5737,15 +5737,6 @@
   font-stretch: normal;
   unicode-range: U+0020-2074;
 }
-@font-face {
-  font-display: swap;
-  font-family: "ETC Trispace wide";
-  src: url(../img/design/etc-trispace-wide.95b354.woff2) format("woff2"), url(../img/design/etc-trispace-wide.c2237f.woff) format("woff");
-  font-weight: 400;
-  font-style: normal;
-  font-stretch: expanded;
-  unicode-range: U+0020-00FE;
-}
 /*
 @import 'components/prism';
 @import 'base/mixins';
@@ -5876,8 +5867,218 @@ em.btn-nav, em .btn-nav {
   background: #F2F2F2;
 }
 
-/*@import 'base/forms';
-@import 'base/icons';*/
+/*@import 'base/forms';*/
+.icon-large.icon-large {
+  display: inline-block;
+  height: 63px;
+  width: 63px;
+}
+.icon-large.icon-large.icon-sq {
+  line-height: 63px;
+  text-align: center;
+}
+.icon-large.icon-large.icon-sq svg {
+  -webkit-transform: translate(0, -5px);
+          transform: translate(0, -5px);
+}
+.icon-large.icon-large svg, .icon-large.icon-large img {
+  height: 35px;
+  width: 35px;
+}
+.icon-large.icon-large .shape {
+  font-size: 2px;
+  -webkit-transform: translate(0, -2px);
+          transform: translate(0, -2px);
+}
+
+.icon-small.icon-small {
+  display: inline-block;
+  height: 38px;
+  width: 38px;
+}
+.icon-small.icon-small.icon-sq {
+  line-height: 38px;
+  text-align: center;
+}
+.icon-small.icon-small.icon-sq svg, .icon-small.icon-small.icon-sq span {
+  -webkit-transform: translate(0, -4px);
+          transform: translate(0, -4px);
+}
+.icon-small.icon-small svg, .icon-small.icon-small img {
+  height: 15px;
+  width: 15px;
+}
+
+.icon-tiny.icon-tiny {
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+}
+.icon-tiny.icon-tiny.icon-sq {
+  line-height: 32px;
+  text-align: center;
+}
+.icon-tiny.icon-tiny.icon-sq svg {
+  -webkit-transform: translate(0, -3px);
+          transform: translate(0, -3px);
+}
+.icon-tiny.icon-tiny svg, .icon-tiny.icon-tiny img {
+  height: 12px;
+  width: 12px;
+}
+.icon-tiny.icon-tiny .shape {
+  font-size: 1px;
+  -webkit-transform: translate(0, -4px);
+          transform: translate(0, -4px);
+}
+
+.icon-large.icon-large svg, .icon-small.icon-small svg, .icon-tiny.icon-tiny svg {
+  vertical-align: middle;
+}
+
+.icon-pip {
+  height: 16px;
+  width: 16px;
+}
+.icon-pip:focus, .icon-pip:active, .icon-pip:hover {
+  background: #6041EB;
+}
+
+.shape {
+  display: inline-block;
+  font-size: 1.2px;
+  font-style: normal;
+  font-weight: normal;
+  position: relative;
+  vertical-align: middle;
+}
+.shape::before, .shape::after {
+  content: "";
+  position: absolute;
+}
+
+.sh-ellipsis {
+  margin: 0 10em;
+}
+.sh-ellipsis, .sh-ellipsis::before, .sh-ellipsis::after {
+  background: currentColor;
+  border-radius: 50%;
+  height: 8em;
+  -webkit-transition: all ease 0.2s;
+  transition: all ease 0.2s;
+  width: 8em;
+}
+.sh-ellipsis::before {
+  left: 13em;
+}
+.sh-ellipsis::after {
+  right: 13em;
+}
+
+.toggle:focus ~ .toggle-container .sh-ellipsis::before,
+label:hover .sh-ellipsis::before,
+.sh-ellipsis:hover::before {
+  left: 15em;
+}
+.toggle:focus ~ .toggle-container .sh-ellipsis::after,
+label:hover .sh-ellipsis::after,
+.sh-ellipsis:hover::after {
+  right: 15em;
+}
+
+.sh-arrow-right, .sh-arrow-left {
+  height: 16em;
+  width: 16em;
+}
+.sh-arrow-right::before, .sh-arrow-left::before {
+  bottom: 8em;
+  border-top: solid 0.5em currentColor;
+  right: 0;
+  width: 16em;
+}
+.sh-arrow-right::after, .sh-arrow-left::after {
+  border: solid 0.5em transparent;
+  border-right-color: currentColor;
+  border-top-color: currentColor;
+  height: 8.5em;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  width: 8.5em;
+}
+
+.sh-arrow-right::after {
+  top: 3.5em;
+  right: 0.1em;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.sh-arrow-left::after {
+  left: 1em;
+  top: 3.5em;
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+}
+
+.sh-arrow-up, .sh-arrow-down {
+  height: 16em;
+  width: 16em;
+}
+.sh-arrow-up::before, .sh-arrow-down::before {
+  bottom: 0;
+  border-right: solid 0.5em currentColor;
+  left: 8em;
+  height: 16em;
+}
+.sh-arrow-up::after, .sh-arrow-down::after {
+  border: solid 0.5em transparent;
+  border-right-color: currentColor;
+  border-top-color: currentColor;
+  height: 8.5em;
+  right: 3.5em;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  width: 8.5em;
+}
+
+.sh-arrow-up::after {
+  top: 1.5em;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.sh-arrow-down::after {
+  bottom: 1.5em;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+.sh-close {
+  height: 10em;
+  width: 10em;
+}
+.sh-close::before, .sh-close::after {
+  border-top: solid 2px currentColor;
+  left: 0;
+  top: 50%;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  width: 11em;
+}
+.sh-close::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.sh-close::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 html {
   font-size: 1.0625rem;
 }
@@ -5886,12 +6087,10 @@ html {
     font-size: 0.8rem;
   }
 }
-@media (max-width: 575.98px) {
-  html {
-    font-size: 0.6rem;
-  }
-}
 
+/*@include media-breakpoint-down(sm) {
+  font-size: $font-size-body-sm;
+}*/
 body {
   background: #fff;
   border-color: #000;
@@ -5932,10 +6131,6 @@ h5, .h5 {
 
 h6, .h6 {
   font-size: 2rem;
-}
-
-.cat {
-  font-family: "ETC Trispace wide", "Lucida Console", "Lucida Sans Typewriter", "Bitstream Vera Sans Mono", monaco, Consolas, monospace;
 }
 
 .count {
@@ -6037,7 +6232,38 @@ abbr[title]::after {
   right: 0;
 }
 
-/*@import 'base/tables';*/
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+caption {
+  text-align: left;
+}
+
+th {
+  font-weight: normal;
+  text-align: inherit;
+}
+
+th, td {
+  padding: 0.5em;
+}
+
+thead tr:last-child th, thead tr:last-child td {
+  border-bottom: solid 0.1em #6041EB;
+  vertical-align: bottom;
+}
+
+@media (max-width: 575.98px) {
+  .stack-xs {
+    text-align: right;
+    text-orientation: mixed;
+    -webkit-writing-mode: vertical-rl;
+        -ms-writing-mode: tb-rl;
+            writing-mode: vertical-rl;
+  }
+}
 .height-large {
   min-height: 36rem;
 }
@@ -6048,9 +6274,35 @@ abbr[title]::after {
 @import 'components/tooltips';
 @import 'components/blockquotes';
 @import 'components/aspect-ratio';
-@import 'components/marquee';
-@import 'components/nav';
-@import 'components/service-progress';
+@import 'components/marquee';*/
+@media (max-width: 575.98px) {
+  .main-nav.main-nav {
+    background: #6041EB;
+    color: #fff;
+    height: 100vh;
+    left: 0;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    -webkit-transform: translate(200vw, 0);
+            transform: translate(200vw, 0);
+    -webkit-transition: -webkit-transform ease 0.5s;
+    transition: -webkit-transform ease 0.5s;
+    transition: transform ease 0.5s;
+    transition: transform ease 0.5s, -webkit-transform ease 0.5s;
+    width: 100vw;
+    z-index: 5;
+  }
+  .main-nav.main-nav a {
+    color: inherit;
+  }
+
+  [id=nav-toggle]:checked ~ .main-nav {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+/*@import 'components/service-progress';
 @import 'components/block-scroll';
 @import 'components/strategy-axis';
 @import 'components/tables';
@@ -6096,7 +6348,7 @@ abbr[title]::after {
   background: #F7FD54;
 }
 .bt-highlight-yellow .svg-tint {
-  fill: #60CC7C;
+  fill: #6041EB;
 }
 
 .bt-sage-green {
@@ -6125,14 +6377,14 @@ abbr[title]::after {
   background: #6041EB;
 }
 .bg-interactive-blue .svg-tint {
-  fill: #F6F4D0;
+  fill: #F7FD54;
 }
 
 .bg-black {
   background: #000;
 }
 .bg-black .svg-tint {
-  fill: #F6F4D0;
+  fill: #F7FD54;
 }
 
 /*
@@ -6402,10 +6654,6 @@ svg {
   font-family: "ETC Trispace bold", "Lucida Console", "Lucida Sans Typewriter", "Bitstream Vera Sans Mono", monaco, Consolas, monospace !important;
 }
 
-.type-etc-wide {
-  font-family: "ETC Trispace wide", "Lucida Console", "Lucida Sans Typewriter", "Bitstream Vera Sans Mono", monaco, Consolas, monospace !important;
-}
-
 .text-black {
   color: #000;
 }
@@ -6436,6 +6684,11 @@ svg {
 
 .brd-all {
   border: solid 0.1em transparent;
+  border-color: inherit;
+}
+
+.brd-bottom {
+  border-bottom: solid 0.1em transparent;
   border-color: inherit;
 }
 

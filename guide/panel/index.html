@@ -70,7 +70,28 @@
     <section class="gutter-large" aria-label="Main navigation">
       <h2 class="container">Main Navigation</h2>
 
-      <nav class="bg-black pad-vert-small">
+      <input type="checkbox" name="nav-toggle" id="nav-toggle" class="sr-only toggle">
+      <header class="d-md-none bg-black pad-vert-small toggle-container">
+        <div class="container">
+          <div class="row">
+            <p class="col-8 flush">
+              <a href="/Finetune-Partners-2022-dev/" title="Return to the home page">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 159.1" aria-label="Finetune Partners" width="35" height="35">
+                  <path fill="#2e38ef" d="M33 146l30 13h34l30-13 23-25 10-32-4-33-16-29-27-20-33-7-33 7-27 20L4 56 0 89l10 32z"/>
+                  <path fill="#fff" d="m 63,68 -5,10 a 40,40 0 0 0 21,8 C 79,83 74,76 74,76 Z m 29,6 a 71,71 0 0 1 6,7 c 7,-5 11,-14 11,-23 0,-13 -7,-24 -18,-24 -13,0 -21,12 -21,26 0,16 18,23 18,37 0,7 -4,15 -14,15 -8,0 -14,-7 -15,-11 l -10,4 c 2,7 11,17 25,17 17,0 25,-13 25,-26 C 99,80 81,72 81,61 81,50 85,45 91,45 c 6,0 8,6 8,13 0,9 -3,13 -7,16 z"/>
+                </svg>
+              </a>
+            </p>
+            <p class="col-4 flush text-right">
+              <label for="nav-toggle" class="pad-vert-tiny text-interactive-blue" title="Expand navigation">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="shape sh-ellipsis"></span>
+              </label>
+            </p>
+          </div>
+        </div>
+      </header>
+      <nav class="bg-black pad-vert-small main-nav">
         <div class="container">
           <div class="row">
             <p class="col-8 flush">
@@ -182,10 +203,10 @@
         <div class="container">
           <div class="row align-items-end height-large">
             <div class="col-9">
-              <h1 class="text-pale-yellow">Data Clarity, Honesty, And Guidance</h1>
+              <h1 class="text-highlight-yellow">Data Clarity, Honesty, And Guidance</h1>
               <p>
-                <a href="#" class="btn btn-primary btn-arrow btn-shadow bt-pale-yellow">Consultations</a>
-                <a href="#" class="btn btn-primary btn-arrow btn-shadow bt-pale-yellow">Our Master Service Agreement</a>
+                <a href="#" class="btn btn-primary btn-arrow btn-shadow bt-highlight-yellow">Consultations</a>
+                <a href="#" class="btn btn-primary btn-arrow btn-shadow bt-highlight-yellow">Our Master Service Agreement</a>
               </p>
             </div>
             <p class="col-3 flush svg-block">
@@ -340,9 +361,9 @@
         <div class="container">
           <div class="row align-items-end height-large">
             <div class="col-9">
-              <h1>A Team of Specialists</h1>
+              <h1 class="text-interactive-blue">A Team of Specialists</h1>
               <p>
-                <a href="#" class="btn btn-primary btn-arrow bt-sage-green">Want to learn more?</a>
+                <a href="#" class="btn btn-primary btn-arrow btn-shadow bg-interactive-blue">Want to learn more?</a>
               </p>
             </div>
             <p class="col-3 flush svg-block">
@@ -417,9 +438,9 @@
         <div class="container">
           <div class="row align-items-end height-large">
             <div class="col-9">
-              <h1 class="text-pale-yellow">Extra Support To Help You Achieve Your Goals</h1>
+              <h1 class="text-highlight-yellow">Extra Support To Help You Achieve Your Goals</h1>
               <p>
-                <a href="#" class="btn btn-primary btn-shadow bt-pale-yellow">We're Here, 24/7</a>
+                <a href="#" class="btn btn-primary btn-shadow bt-highlight-yellow">We're Here, 24/7</a>
               </p>
             </div>
             <p class="col-3 flush svg-block">

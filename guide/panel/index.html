@@ -52,14 +52,14 @@
 
   <nav class="bt-white brd-bottom pad-vert-tiny main-nav gutter-large" aria-label="Main">
     <p class="container flush">
-      <a href="/Finetune-Partners-2022-dev/guide/" class="btn btn-nav">Home</a>
-      <a href="/Finetune-Partners-2022-dev/guide/typeface/" class="btn btn-nav">Typefaces</a>
-      <a href="/Finetune-Partners-2022-dev/guide/typography/" class="btn btn-nav">Typography</a>
-      <a href="/Finetune-Partners-2022-dev/guide/heading/" class="btn btn-nav">Headings</a>
-      <a href="/Finetune-Partners-2022-dev/guide/colour/" class="btn btn-nav">Colour</a>
-      <a href="/Finetune-Partners-2022-dev/guide/button/" class="btn btn-nav">Buttons</a>
-      <a href="/Finetune-Partners-2022-dev/guide/panel/" class="btn btn-nav">Panels and call-to-action</a>
-      <a href="/Finetune-Partners-2022-dev/guide/icon/" class="btn btn-nav">Icons</a>
+      <a href="/Finetune-Partners-2022-dev/guide/" class="btn">Home</a>
+      <a href="/Finetune-Partners-2022-dev/guide/typeface/" class="btn">Typefaces</a>
+      <a href="/Finetune-Partners-2022-dev/guide/typography/" class="btn">Typography</a>
+      <a href="/Finetune-Partners-2022-dev/guide/heading/" class="btn">Headings</a>
+      <a href="/Finetune-Partners-2022-dev/guide/colour/" class="btn">Colour</a>
+      <a href="/Finetune-Partners-2022-dev/guide/button/" class="btn">Buttons</a>
+      <a href="/Finetune-Partners-2022-dev/guide/panel/" class="btn">Panels and call-to-action</a>
+      <a href="/Finetune-Partners-2022-dev/guide/icon/" class="btn">Icons</a>
     </p>
   </nav>
 
@@ -71,7 +71,7 @@
       <h2 class="container">Main Navigation</h2>
 
       <input type="checkbox" name="nav-toggle" id="nav-toggle" class="sr-only toggle">
-      <header class="d-md-none bg-black pad-vert-small toggle-container">
+      <header class="d-sm-none bg-black pad-vert-small toggle-container">
         <div class="container">
           <div class="row">
             <p class="col-8 flush">
@@ -83,7 +83,7 @@
               </a>
             </p>
             <p class="col-4 flush text-right">
-              <label for="nav-toggle" class="pad-vert-tiny text-interactive-blue" title="Expand navigation">
+              <label for="nav-toggle" class="pad-vert-tiny text-interactive-blue d-inline-block" title="Expand navigation">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="shape sh-ellipsis"></span>
               </label>
@@ -94,18 +94,26 @@
       <nav class="bg-black pad-vert-small main-nav">
         <div class="container">
           <div class="row">
-            <p class="col-8 flush">
+            <p class="col-auto flush">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 159.1" aria-label="Finetune Partners" width="35" height="35">
                 <path fill="#2e38ef" d="M33 146l30 13h34l30-13 23-25 10-32-4-33-16-29-27-20-33-7-33 7-27 20L4 56 0 89l10 32z"/>
                 <path fill="#fff" d="m 63,68 -5,10 a 40,40 0 0 0 21,8 C 79,83 74,76 74,76 Z m 29,6 a 71,71 0 0 1 6,7 c 7,-5 11,-14 11,-23 0,-13 -7,-24 -18,-24 -13,0 -21,12 -21,26 0,16 18,23 18,37 0,7 -4,15 -14,15 -8,0 -14,-7 -15,-11 l -10,4 c 2,7 11,17 25,17 17,0 25,-13 25,-26 C 99,80 81,72 81,61 81,50 85,45 91,45 c 6,0 8,6 8,13 0,9 -3,13 -7,16 z"/>
               </svg>
+            </p>
+            <p class="col d-sm-none text-right flush">
+              <label for="nav-toggle" class="btn brd-all round icon-small icon-sq" title="Close Navigation">
+                <span class="shape sh-close"></span>
+                <span class="sr-only">Close Navigation</span>
+              </label>
+            </p>
+            <p class="col-sm-auto col-md flush">
               <a href="#" class="btn btn-nav">About</a>
               <a href="#" class="btn btn-nav">Process</a>
               <a href="#" class="btn btn-nav">Insights</a>
             </p>
-            <p class="col-auto flush text-right">
+            <p class="col-sm col-md-auto flush text-right text-sm-center">
               <a href="#" class="btn btn-nav">Contact Us</a>
-              <a href="#" class="btn btn-primary btn-small flush">Book a Consultation</a>
+              <a href="#" class="btn btn-primary btn-small suck">Book a Consultation</a>
             </p>
           </div>
         </div>
@@ -496,6 +504,130 @@
 
     </section>
 
+    <section class="gutter-large container" aria-label="Frequently Asked Questions">
+      <h2>Frequently Asked Questions</h2>
+
+      <div class="row">
+        <div class="col-md">
+
+          <div class="faq" itemscope="" itemtype="http://schema.org/Question">
+            <input type="radio" name="faq" id="faq1" class="sr-only">
+            <label for="faq1" class="faq-btn" data-js="label-toggle" aria-expanded="false" aria-controls="faq1">
+              <span itemprop="text">What Tools Do You Use?</span>
+            </label>
+            <div class="faq-details" role="region" itemprop="suggestedAnswer acceptedAnswer" itemscope="" itemtype="http://schema.org/Answer">
+              <div itemprop="text">
+                <p>Vestibulum vel purus felis. Mauris varius velit quis semper lacinia. Maecenas accumsan maximus ultrices. Donec luctus elit lectus, at congue tellus mattis eget. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Mauris nunc odio, auctor in bibendum ac, molestie euismod nunc.</p>
+                <p>Phasellus convallis nec purus nec pharetra. Sed id massa et massa tempor maximus et ut dolor. Aenean eu sodales nulla. Nunc id pulvinar nibh. Donec nisl magna, porta in tellus vitae, congue varius sapien. Nullam placerat elit libero, vitae fermentum nisi rutrum ac. Maecenas non mollis tortor. Curabitur convallis condimentum nulla quis consectetur. </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq" itemscope="" itemtype="http://schema.org/Question">
+            <input type="radio" name="faq" id="faq2" class="sr-only">
+            <label for="faq2" class="faq-btn" data-js="label-toggle" aria-expanded="false" aria-controls="faq2">
+              <span itemprop="text">How Long Does It Take To Start Getting Insights and a Dashboard?</span>
+            </label>
+            <div class="faq-details" role="region" itemprop="suggestedAnswer acceptedAnswer" itemscope="" itemtype="http://schema.org/Answer">
+              <div itemprop="text">
+                <p>Nam ut porta eros. In id tortor tempor, tincidunt ex aliquet, euismod tellus. Pellentesque tincidunt libero velit, quis molestie metus venenatis ultricies. Nulla feugiat diam nec diam venenatis, vitae accumsan mauris fermentum. Nunc quis justo nec orci tincidunt sollicitudin. Nullam eget velit metus.</p>
+                <ul>
+                  <li>Cras eu fringilla eros</li>
+                  <li>In nec ipsum convallis dolor commodo varius</li>
+                  <li>Curabitur et lacus aliquam, tempor massa id, dignissim arcu</li>
+                  <li>Fusce lobortis nulla justo, eu molestie risus mollis in</li>
+                  <li>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</li>
+                </ul>
+                <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla scelerisque libero in tempus sollicitudin. Quisque dui dolor, bibendum ut tincidunt vestibulum, malesuada nec ipsum. Nam consectetur augue odio, a pretium augue gravida vel. </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md">
+
+          <div class="faq" itemscope="" itemtype="http://schema.org/Question">
+            <input type="radio" name="faq" id="faq3" class="sr-only">
+            <label for="faq3" class="faq-btn" data-js="label-toggle" aria-expanded="false" aria-controls="faq3">
+              <span itemprop="text">Can I Trial Your Services?</span>
+            </label>
+            <div class="faq-details" role="region" itemprop="suggestedAnswer acceptedAnswer" itemscope="" itemtype="http://schema.org/Answer">
+              <div itemprop="text">
+                <p>Curabitur sagittis ornare lorem varius convallis. Suspendisse in dui quam. Nunc sed massa vel nisl ultrices iaculis ut sed neque. Nulla dignissim hendrerit neque id lacinia. Nam faucibus porta mollis.</p>
+                <p>Cras finibus lorem ex, id molestie magna congue at. Sed ac vestibulum velit. Fusce nulla enim, ultricies pulvinar purus vitae, molestie interdum sapien. Etiam condimentum risus diam, ut fringilla ante gravida quis. Nunc porttitor turpis ut tellus tempus egestas. Aliquam erat volutpat.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq" itemscope="" itemtype="http://schema.org/Question">
+            <input type="radio" name="faq" id="faq4" class="sr-only">
+            <label for="faq4" class="faq-btn" data-js="label-toggle" aria-expanded="false" aria-controls="faq4">
+              <span itemprop="text">Is This Just Data Studio?</span>
+            </label>
+            <div class="faq-details" role="region" itemprop="suggestedAnswer acceptedAnswer" itemscope="" itemtype="http://schema.org/Answer">
+              <div itemprop="text">
+                <p>Proin interdum fringilla pretium. Mauris eget risus quis neque hendrerit faucibus eget at libero. Maecenas ac blandit sapien, id aliquet urna. Suspendisse mollis, velit ut blandit gravida, ligula risus pretium risus, non facilisis lorem felis dictum risus. Nulla nec ex id nulla consequat imperdiet in vitae tortor.</p>
+                <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec auctor nisi vitae lorem tincidunt fermentum. Suspendisse sit amet luctus augue, vitae iaculis diam. Ut blandit arcu vel eros placerat, non imperdiet purus convallis. Vivamus egestas enim orci, quis aliquet orci vestibulum at.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section aria-label="Insight Call-To-Action Panels" class="container gutter-large">
+      <h2>Insight Call-To-Action Panels</h2>
+
+      <div class="row gutter-base">
+
+        <article class="col-sm-6 col-lg-4 col-xl-3 gutter-medium" itemscope="" itemtype="https://schema.org/NewsArticle" aria-label="Shopify Webstore 2.0 product FAQ example">
+          <a href="/Finetune-Partners-2022-dev/insights/shopify-webstore-2-product-faq-example/" class="block-link brd-all brd-black d-block pad-all-small flex-vert">
+            <p class="row">
+              <strong class="col text-uppercase">Insights</strong>
+              <strong class="col text-right"><time datetime="">010122</time></strong>
+            </p>
+            <p class="inside-pad"><img itemprop="image" src="/Finetune-Partners-2022-dev/img/blog/cta-shopify-webstore-2-product-faq-example.jpg" class="img-fluid" alt=""></p>
+            <h3 class="lead type-etc-bold" itemprop="headline">Shopify Webstore 2.0 product <abbr>FAQ</abbr> example</h3>
+          </a>
+        </article>
+
+        <article class="col-sm-6 col-lg-4 col-xl-3 gutter-medium" itemscope="" itemtype="https://schema.org/NewsArticle" aria-label="Heads will roll">
+          <a href="/Finetune-Partners-2022-dev/insights/shopify-webstore-2-product-faq-example/" class="block-link brd-all brd-black d-block pad-all-small flex-vert">
+            <p class="row">
+              <strong class="col text-uppercase">Insights</strong>
+              <strong class="col text-right"><time datetime="">020222</time></strong>
+            </p>
+            <p class="inside-pad"><img itemprop="image" src="/Finetune-Partners-2022-dev/img/blog/cta-heads-will-roll.jpg" class="img-fluid" alt=""></p>
+            <h3 class="lead type-etc-bold" itemprop="headline">Heads will roll</h3>
+          </a>
+        </article>
+
+        <article class="col-sm-6 col-lg-4 col-xl-3 gutter-medium" itemscope="" itemtype="https://schema.org/NewsArticle" aria-label="Caching API requests in Next.JS">
+          <a href="/Finetune-Partners-2022-dev/insights/shopify-webstore-2-product-faq-example/" class="block-link brd-all brd-black d-block pad-all-small flex-vert">
+            <p class="row">
+              <strong class="col text-uppercase">Insights</strong>
+              <strong class="col text-right"><time datetime="">030322</time></strong>
+            </p>
+            <p class="inside-pad"><img itemprop="image" src="/Finetune-Partners-2022-dev/img/blog/cta-caching-api-requests-in-next-js.jpg" class="img-fluid" alt=""></p>
+            <h3 class="lead type-etc-bold" itemprop="headline">Caching API requests in Next.JS</h3>
+          </a>
+        </article>
+
+        <article class="col-sm-6 col-lg-4 col-xl-3 gutter-medium" itemscope="" itemtype="https://schema.org/NewsArticle" aria-label="Running a Strategic CRO Programme: In Graphs. Part 1: The Symbiosis of Conversion Rate and Average Order Value">
+          <a href="/Finetune-Partners-2022-dev/insights/shopify-webstore-2-product-faq-example/" class="block-link brd-all brd-black d-block pad-all-small flex-vert">
+            <p class="row">
+              <strong class="col text-uppercase">Insights</strong>
+              <strong class="col text-right"><time datetime="">040422</time></strong>
+            </p>
+            <p class="inside-pad"><img itemprop="image" src="/Finetune-Partners-2022-dev/img/blog/cta-running-a-strategic-cro-programme1.jpg" class="img-fluid" alt=""></p>
+            <h3 class="lead type-etc-bold" itemprop="headline">Running a Strategic CRO Programme: In Graphs. Part 1: The Symbiosis of Conversion Rate and Average Order Value</h3>
+          </a>
+        </article>
+
+      </div>
+
+    </section>
 
   </main>
 </body>

@@ -123,6 +123,35 @@
             </ol>
           </section>
         </div>
+        <section aria-label="Legal lists">
+          <h3>Legal lists</h3>
+          <ol class="list-decimal">
+            <li>
+              <p class="h3">Nam iaculis sed elit non pellentesque</p>
+            </li>
+            <li>
+              <p class="h3">Sed posuere, leo vitae auctor lobortis, ligula massa finibus elit, id sollicitudin elit diam tincidunt nisl</p>
+            </li>
+            <li><p class="h3">Nam molestie vehicula vulputate</p>
+              <ol>
+                <li>Phasellus ac purus quam</li>
+                <li>Donec imperdiet feugiat massa quis luctus</li>
+                <li>Quisque mattis, arcu eu pellentesque auctor, dolor orci sagittis orci, sit amet tristique lacus leo
+                  nec odio
+                  <ol>
+                    <li>Suspendisse mollis, lacus id lobortis tincidunt, est nulla egestas nulla, vel vehicula odio
+                      tellus eu orci</li>
+                    <li>Ut tempor odio mi, pharetra porttitor turpis consequat et</li>
+                  </ol>
+                </li>
+                <li>Curabitur non massa nisi</li>
+              </ol>
+            </li>
+            <li>
+              <p class="h3">Etiam pellentesque erat et sem egestas cursus</p>
+            </li>
+          </ol>
+        </section>
       </section>
 
       <section aria-label="Bodytext">
@@ -130,13 +159,49 @@
         <div class="row">
           <section class="col-md">
             <h3>Normal bodytext</h3>
-            <p>ETC Trispace regular, 1rem. Nunc sed quam at ante mattis <strong>this is strong text</strong> faucibus et in
-              turpis. Phasellus lacinia pharetra consectetur. Quisque at erat tellus. Aliquam velit nisi, <b>this is bold text</b> commodo id viverra eu, malesuada quis lectus. Aenean vel consectetur elit, ut tristique lectus. Sed convallis <em>this is emphasis text</em> ipsum et lorem maximus varius. Nulla nec vulputate justo. Integer dolor eros, <i>this is italic text</i> rhoncus eu laoreet facilisis, volutpat id lacus. Proin cursus metus sit amet rhoncus dapibus. Sed ac lectus <a href="#">this is a link</a> nec leo porta aliquet. Donec dictum pretium <abbr title="British Broadcasting Corporation">BBC</abbr> est at tempus. Etiam non egestas tellus. Phasellus luctus malesuada magna, auctor ornare eros pretium sit amet.</p>
+            <p>ETC Trispace regular, 1rem. Nunc sed quam at ante mattis <strong>this is strong text</strong> faucibus et in turpis. <mark>Highlighted text phasellus lacinia pharetra consectetur</mark>. Quisque at erat tellus. Aliquam velit nisi, <b>this is bold text</b> commodo id viverra eu, malesuada quis lectus. Aenean vel consectetur elit, ut tristique lectus. Sed convallis <em>this is emphasis text</em> ipsum et lorem maximus varius. Nulla nec vulputate justo. Integer dolor eros, <i>this is italic text</i> rhoncus eu laoreet facilisis, volutpat id lacus. Proin cursus metus sit amet rhoncus dapibus. Sed ac lectus <a href="#">this is a link</a> nec leo porta aliquet. Donec dictum pretium <abbr title="British Broadcasting Corporation">BBC</abbr> est at tempus. Etiam non egestas tellus. Phasellus luctus malesuada magna, auctor ornare eros pretium sit amet.</p>
           </section>
           <section class="col-md">
             <h3>Large bodytext</h3>
-            <p class="lead">ETC Trispace regular, 1.2rem. Class <code>lead</code>. In arcu sapien, tincidunt <strong>this is strong text</strong> non turpis et, imperdiet vulputate est. Integer eu <b>this is bold text</b> dictum est. Maecenas hendrerit <em>this is emphasis text</em> in eu massa. Fusce vitae arcu <i>this is italic text</i> nisi. Donec euismod auctor <a href="#">this is a link</a> nibh, quis pulvinar mi ultricies eu. Pellentesque <abbr title="British Broadcasting Corporation">BBC</abbr> habitant morbi.</p>
+            <p class="lead">ETC Trispace regular, 1.2rem. Class <code>lead</code>. In arcu sapien, tincidunt <strong>this is strong text</strong> non turpis et, imperdiet vulputate est. Integer eu <b>this is bold text</b> dictum est. Maecenas hendrerit <em>this is emphasis text</em> in eu massa. Fusce vitae arcu <i>this is italic text</i> nisi. Donec euismod auctor <a href="#">this is a link</a> nibh, <mark>Highlighted text quis pulvinar mi ultricies eu</mark>. Pellentesque <abbr title="British Broadcasting Corporation">BBC</abbr> habitant morbi.</p>
           </section>
+        </div>
+      </section>
+
+      <section aria-label="Quotations">
+        <h2>Quotations</h2>
+        <div class="row">
+          <div class="col-md">
+            <blockquote class="bt-sage-green pad-all-med">
+              <p class="h3">Quotations reuse heading styles, but with the addition of quotation marks around the text being quoted</p>
+            </blockquote>
+            <blockquote class="bg-black pad-all-med">
+              <p class="h5">Blockquotes can be used as asides in Insight articles or to illustrate a point in the main content.</p>
+            </blockquote>
+            <blockquote class="bt-highlight-yellow pad-all-med">
+              <p class="h6">Sometimes, quotations go on for more than one paragraph. When this happens, only the last paragraph should have a closing quotation mark.</p>
+              <p class="h6">Like this one, for example.</p>
+            </blockquote>
+            <figure class="bt-sage-green pad-all-med">
+              <blockquote>
+                <p class="h6">Citing quotations <a href="https://css-tricks.com/quoting-in-html-quotations-citations-and-blockquotes/" target="_blank" title="CSS Tricks article on Blockquotes and Cite tags">must be done carefully</a>, as the <code>cite</code> element does not belong inside a <code>blockquote</code> tag.</p>
+                <p class="h6">Adding the extra markup of a <code>figure</code> element gives a way to cite quotations.</p>
+              </blockquote>
+              <figcaption class="text-right"><cide>Ross Angus</cide>, <strong>Web Developer</strong></figcaption>
+            </figure>
+          </div>
+
+          <div class="col-md">
+            <blockquote class="bt-pale-yellow pad-all-large">
+              <p class="h2">Text can take any size of heading text</p>
+            </blockquote>
+            <blockquote class="bg-interactive-blue pad-all-med">
+              <p class="h4">If you're using background colours and padding utility classes, make sure to match the padding class with the size of the heading.</p>
+            </blockquote>
+            <blockquote>
+              <p class="h5">You do not need to add a background colour or padding utility class to <code>blockquote</code> elements, if you don't want to.</p>
+            </blockquote>
+          </div>
         </div>
       </section>
 
